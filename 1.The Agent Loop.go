@@ -16,6 +16,12 @@ append results
 This is the core loop: feed tool results back to the model
 until the model decides to stop. Production agents layer
 policy, hooks, and lifecycle controls on top.
+
+
+你发指令 → AI思考 → AI调用工具（bash命令）→ 执行工具 → 把结果还给AI → AI再思考
+↑                                                ↓
+└──────────────── 循环直到AI直接回答你 ───────────┘
+
 */
 
 package main
