@@ -69,7 +69,8 @@ func main() {
 	scanner.Buffer(make([]byte, 0, 64*1024), 1024*1024)
 
 	for {
-		fmt.Print("\033[36ms02 >> \033[0m")
+		fmt.Printf("Go AI Agent 启动成功！输入 q/exit 退出")
+		fmt.Print("\033[36mgo-agent >> \033[0m")
 		if !scanner.Scan() {
 			break
 		}
